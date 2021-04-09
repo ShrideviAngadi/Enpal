@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import java.util.concurrent.TimeUnit;
+
 
 public class SeleniumTests {
 
@@ -22,7 +22,7 @@ public class SeleniumTests {
     public void setUp() throws Exception {
         driver = new ChromeDriver();
         baseUrl = "https://dynamic-slider-staging.azurewebsites.net/";
-        //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
     }
     @Test
     public void testSeleniumTestCase() throws Exception {
@@ -31,8 +31,32 @@ public class SeleniumTests {
         waitSeconds(2);
         driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[2]/div[1]/div[2]")).click();//Nein clicking
         waitSeconds(2);
+        driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[2]/div[1]/div[2]")).click();//3-4 click
+        waitSeconds(2);
+        driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[1]/div[1]/div[2]")).click();//morgens
+        waitSeconds(2);
+        driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[1]/div[1]/div[2]")).click();//Ja
+        waitSeconds(2);
+        driver.findElement(By.xpath("//input[contains(@name, 'zipCode')]")).sendKeys("10367");
+        waitSeconds(2);
+        driver.findElement(By.xpath("//button[contains(@data-testid, 'submit')]")).click();
+        waitSeconds(6);
+        driver.findElement(By.xpath("//input[contains(@name, 'name')]")).sendKeys("Thomas tortal");
+        driver.findElement(By.xpath("//input[contains(@name, 'address')]")).sendKeys("Gotlinder strasse 26");
+        driver.findElement(By.xpath("//input[contains(@name, 'phone')]")).sendKeys("015212141879");
+        driver.findElement(By.xpath("//input[contains(@name, 'email')]")).sendKeys("thomas.tortal@gmail.com");
+        driver.findElement(By.xpath("//button[contains(@data-testid, 'submit')]")).click();
+        waitSeconds(6);
+        driver.findElement(By.xpath("//button[contains(@data-testid, 'submit')]")).click();
+        waitSeconds(2);
+        driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[2]")).click();
+        waitSeconds(2);
+        driver.findElement(By.xpath("//div[contains(@class, 'SingleAnswer_AnswersContainer__J2Aul')]/div[1]")).click();
+        waitSeconds(2);
+        driver.findElement(By.xpath("//textarea[contains(@name, 'freetext')]")).sendKeys("selenium testing");
+        waitSeconds(2);
+        driver.findElement(By.xpath("//button[contains(@data-testid, 'freetext-submit')]")).click();
 
-       // driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
     }
 
     @After
