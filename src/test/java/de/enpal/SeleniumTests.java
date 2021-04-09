@@ -5,9 +5,11 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.io.File;
 
 
 public class SeleniumTests {
@@ -56,6 +58,48 @@ public class SeleniumTests {
         driver.findElement(By.xpath("//textarea[contains(@name, 'freetext')]")).sendKeys("selenium testing");
         waitSeconds(2);
         driver.findElement(By.xpath("//button[contains(@data-testid, 'freetext-submit')]")).click();
+        waitSeconds(2);
+        driver.findElement(By.xpath("//button[contains(@data-testid, 'submit')]")).click();
+        waitSeconds(2);
+
+        //uploading image  1st screen
+        WebElement uploadFile=driver.findElement(By.xpath("//input[contains(@data-testid, 'file-input-roof')]"));
+        File file = new File("TestImage.jpeg");
+        uploadFile.sendKeys(file.getAbsolutePath());
+        waitSeconds(6);
+
+        //2nd screen
+        driver.findElement(By.xpath("//a[contains(@data-testid, 'next-step')]")).click();
+
+        WebElement uploadFile1=driver.findElement(By.xpath("//input[contains(@data-testid, 'file-input-home')]"));
+        File file1 = new File("TestImage.jpeg");
+        uploadFile1.sendKeys(file1.getAbsolutePath());
+        waitSeconds(6);
+
+        //3rd screen
+        driver.findElement(By.xpath("//a[contains(@data-testid, 'next-step')]")).click();
+
+        WebElement uploadFile2=driver.findElement(By.xpath("//input[contains(@data-testid, 'file-input-meter')]"));
+        File file2 = new File("TestImage.jpeg");
+        uploadFile2.sendKeys(file2.getAbsolutePath());
+        waitSeconds(6);
+
+        //4th screen
+        driver.findElement(By.xpath("//a[contains(@data-testid, 'next-step')]")).click();
+
+        WebElement uploadFile3=driver.findElement(By.xpath("//input[contains(@data-testid, 'file-input-invoice')]"));
+        File file3 = new File("TestImage.jpeg");
+        uploadFile3.sendKeys(file3.getAbsolutePath());
+        waitSeconds(6);
+
+        //final phtos sending
+        driver.findElement(By.xpath("//a[contains(@data-testid, 'next-step')]")).click();
+        waitSeconds(2);
+        //fertig button
+        driver.findElement(By.xpath("//button[contains(@data-testid, 'fertig-button')]")).click();
+        waitSeconds(2);
+
+
 
     }
 

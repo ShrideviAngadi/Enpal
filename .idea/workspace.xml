@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="57" column="100" selection-start-line="57" selection-start-column="100" selection-end-line="57" selection-end-column="100" />
+            <state relative-caret-position="236">
+              <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,7 +74,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,6 +96,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -162,50 +162,52 @@
       <workItem from="1617959221283" duration="272000" />
       <workItem from="1617965290160" duration="1189000" />
       <workItem from="1617967141627" duration="1179000" />
-      <workItem from="1617975055095" duration="887000" />
+      <workItem from="1617975055095" duration="1658000" />
+      <workItem from="1617998029488" duration="1784000" />
+      <workItem from="1618000085729" duration="1679000" />
+      <workItem from="1618001964469" duration="1707000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 12h 57m 17s.xml">
+    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 21h 55m 34s.xml">
       <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 12h 59m 01s.xml">
+    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 22h 06m 13s.xml">
       <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 12h 59m 35s.xml">
+    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 22h 17m 01s.xml">
       <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 13h 01m 37s.xml">
+    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 22h 31m 15s.xml">
       <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 14h 02m 11s.xml">
+    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 22h 54m 31s.xml">
       <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 14h 02m 58s.xml">
+    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 23h 05m 43s.xml">
       <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 14h 03m 33s.xml">
+    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 23h 16m 47s.xml">
       <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 14h 04m 14s.xml">
+    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 23h 21m 41s.xml">
       <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 14h 06m 48s.xml">
+    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 23h 29m 01s.xml">
       <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 14h 07m 35s.xml">
+    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 23h 30m 45s.xml">
       <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8613000" />
+    <option name="totallyTimeSpent" value="14554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28540772" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -249,8 +251,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="57" column="100" selection-start-line="57" selection-start-column="100" selection-end-line="57" selection-end-column="100" />
+        <state relative-caret-position="236">
+          <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
