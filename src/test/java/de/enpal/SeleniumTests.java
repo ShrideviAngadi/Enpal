@@ -32,8 +32,8 @@ public class SeleniumTests {
     @Test
     public void testSeleniumTestCase() throws Exception {
         driver.get(baseUrl);
-        driver.findElement(By.xpath("//div[contains(@data-testid, 'label-container')]")).click();
-        waitSeconds(2);
+        //driver.findElement(By.xpath("//div[contains(@class, 'SingleAnswer_AnswersContainer__J2Aul')]/div[1]")).click();
+        //waitSeconds(2);
         driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[2]/div[1]/div[2]")).click();//Nein clicking
         waitSeconds(2);
         driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[2]/div[1]/div[2]")).click();//3-4 click

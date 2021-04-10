@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaec9377-ac7a-4a42-a6e9-a281cfb7b1e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectRoofType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.enpal.SeleniumTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-de.enpal.SeleniumTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.enpal.SeleniumTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/de.enpal.SeleniumTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/de/enpal/SeleniumTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/enpal/SeleniumTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,11 +20,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+            <state relative-caret-position="600">
+              <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectRoofType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-85">
+              <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -27,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            <state relative-caret-position="1605">
+              <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="125" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,8 +91,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectRoofType.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" />
       </list>
     </option>
   </component>
@@ -83,6 +116,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,17 +159,22 @@
               <item name="de" type="462c0819:PsiDirectoryNode" />
               <item name="enpal" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="deenpalassignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Enpal" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618055765221" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618086295952" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -154,8 +193,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="SeleniumTests.testSeleniumTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.QuestionnaireTests.testSattelDachFlow">
+    <configuration name="QuestionnaireTests.testAnderesFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Enpal" />
       <extension name="coverage">
         <pattern>
@@ -164,8 +203,72 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="de.enpal" />
-      <option name="MAIN_CLASS_NAME" value="de.enpal.SeleniumTests" />
-      <option name="METHOD_NAME" value="testSeleniumTestCase" />
+      <option name="MAIN_CLASS_NAME" value="de.enpal.QuestionnaireTests" />
+      <option name="METHOD_NAME" value="testAnderesFlow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestionnaireTests.testFlachDachFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Enpal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.enpal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.enpal" />
+      <option name="MAIN_CLASS_NAME" value="de.enpal.QuestionnaireTests" />
+      <option name="METHOD_NAME" value="testFlachDachFlow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestionnaireTests.testPultDachFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Enpal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.enpal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.enpal" />
+      <option name="MAIN_CLASS_NAME" value="de.enpal.QuestionnaireTests" />
+      <option name="METHOD_NAME" value="testPultDachFlow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestionnaireTests.testSattelDachFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Enpal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.enpal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.enpal" />
+      <option name="MAIN_CLASS_NAME" value="de.enpal.QuestionnaireTests" />
+      <option name="METHOD_NAME" value="testSattelDachFlow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestionnaireTests.testSatteldachFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Enpal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.enpal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.enpal" />
+      <option name="MAIN_CLASS_NAME" value="de.enpal.QuestionnaireTests" />
+      <option name="METHOD_NAME" value="testSatteldachFlow" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,7 +276,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SeleniumTests.testSeleniumTestCase" />
+        <item itemvalue="JUnit.QuestionnaireTests.testSattelDachFlow" />
+        <item itemvalue="JUnit.QuestionnaireTests.testAnderesFlow" />
+        <item itemvalue="JUnit.QuestionnaireTests.testFlachDachFlow" />
+        <item itemvalue="JUnit.QuestionnaireTests.testPultDachFlow" />
+        <item itemvalue="JUnit.QuestionnaireTests.testSatteldachFlow" />
       </list>
     </recent_temporary>
   </component>
@@ -200,50 +307,55 @@
       <workItem from="1618001964469" duration="1707000" />
       <workItem from="1618050873303" duration="1165000" />
       <workItem from="1618052805303" duration="1570000" />
-      <workItem from="1618054700655" duration="741000" />
+      <workItem from="1618054700655" duration="1404000" />
+      <workItem from="1618066553516" duration="1579000" />
+      <workItem from="1618069685535" duration="1396000" />
+      <workItem from="1618072049609" duration="69000" />
+      <workItem from="1618076791602" duration="1103000" />
+      <workItem from="1618085304554" duration="989000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 22h 54m 31s.xml">
-      <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testPultDachFlow - 2021.04.10 at 19h 51m 19s.xml">
+      <configuration name="QuestionnaireTests.testPultDachFlow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 23h 05m 43s.xml">
-      <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testPultDachFlow - 2021.04.10 at 19h 51m 32s.xml">
+      <configuration name="QuestionnaireTests.testPultDachFlow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 23h 16m 47s.xml">
-      <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testPultDachFlow - 2021.04.10 at 19h 53m 15s.xml">
+      <configuration name="QuestionnaireTests.testPultDachFlow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 23h 21m 41s.xml">
-      <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testPultDachFlow - 2021.04.10 at 19h 53m 33s.xml">
+      <configuration name="QuestionnaireTests.testPultDachFlow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 23h 29m 01s.xml">
-      <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testSattelDachFlow - 2021.04.10 at 19h 54m 45s.xml">
+      <configuration name="QuestionnaireTests.testSattelDachFlow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.09 at 23h 30m 45s.xml">
-      <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testSattelDachFlow - 2021.04.10 at 19h 55m 45s.xml">
+      <configuration name="QuestionnaireTests.testSattelDachFlow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.10 at 12h 36m 17s.xml">
-      <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testFlachDachFlow - 2021.04.10 at 19h 56m 13s.xml">
+      <configuration name="QuestionnaireTests.testFlachDachFlow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.10 at 12h 52m 08s.xml">
-      <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testAnderesFlow - 2021.04.10 at 19h 56m 48s.xml">
+      <configuration name="QuestionnaireTests.testAnderesFlow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.10 at 12h 53m 48s.xml">
-      <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testSattelDachFlow - 2021.04.10 at 22h 12m 16s.xml">
+      <configuration name="QuestionnaireTests.testSattelDachFlow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTests_testSeleniumTestCase - 2021.04.10 at 12h 57m 32s.xml">
-      <configuration name="SeleniumTests.testSeleniumTestCase" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testSattelDachFlow - 2021.04.10 at 22h 23m 31s.xml">
+      <configuration name="QuestionnaireTests.testSattelDachFlow" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18030000" />
+    <option name="totallyTimeSpent" value="23829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29756796" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3190272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -252,8 +364,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32968536" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32968536" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994528" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -278,6 +390,24 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectRoofTyoe.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="125" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar!/org/openqa/selenium/chrome/ChromeDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -285,20 +415,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectRoofType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="345">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        <state relative-caret-position="-85">
+          <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
