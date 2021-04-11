@@ -53,6 +53,35 @@ public class QuestionnaireTests {
         houseOwner.selectJa();
         waitSeconds(2);
 
+        PageObjectPostalCode postalCode = new PageObjectPostalCode(driver);
+        checkIfPostalCodeQuestionIsVisible(postalCode);
+        postalCode.enterPostalCode();
+        postalCode.clickNextButton();
+        waitSeconds(6);
+
+        PageObjectSolarOfferInformation solarOfferInformation = new PageObjectSolarOfferInformation(driver);
+        checkIfSolarInformationTextIsVisible(solarOfferInformation);
+        solarOfferInformation.enterFirstAndLastName();
+        solarOfferInformation.enterStrasse();
+        solarOfferInformation.enterHandyNumber();
+        solarOfferInformation.enterEmail();
+        solarOfferInformation.clickGetFreeInformationButton();
+        waitSeconds(4);
+
+        PageObjectAlmostDone almostDone = new PageObjectAlmostDone(driver);
+        checkIfAlmostDoneTextIsVisible(almostDone);
+        almostDone.clickNextButton();
+        waitSeconds(2);
+
+        PageObjectLandRegistrationDetails landRegistrationDetails = new PageObjectLandRegistrationDetails(driver);
+        checkIfLandRegistrationQuestionIsVisible(landRegistrationDetails);
+        landRegistrationDetails.selectOnePerson();
+        waitSeconds(2);
+
+        PageObjectAgeConfirmation ageConfirmation = new PageObjectAgeConfirmation(driver);
+        checkIfAgeConfirmationQuestionIsVisible(ageConfirmation);
+        ageConfirmation.selectAllUnderSeventy();
+        waitSeconds(2);
 
     }
 
@@ -86,6 +115,37 @@ public class QuestionnaireTests {
         houseOwner.selectNein();
         waitSeconds(2);
 
+        PageObjectPostalCode postalCode = new PageObjectPostalCode(driver);
+        checkIfPostalCodeQuestionIsVisible(postalCode);
+        postalCode.enterPostalCode();
+        postalCode.clickNextButton();
+        waitSeconds(6);
+
+        PageObjectSolarOfferInformation solarOfferInformation = new PageObjectSolarOfferInformation(driver);
+        checkIfSolarInformationTextIsVisible(solarOfferInformation);
+        solarOfferInformation.enterFirstAndLastName();
+        solarOfferInformation.enterStrasse();
+        solarOfferInformation.enterHandyNumber();
+        solarOfferInformation.enterEmail();
+        solarOfferInformation.clickGetFreeInformationButton();
+        waitSeconds(2);
+
+        PageObjectAlmostDone almostDone = new PageObjectAlmostDone(driver);
+        checkIfAlmostDoneTextIsVisible(almostDone);
+        almostDone.clickNextButton();
+        waitSeconds(2);
+
+        PageObjectLandRegistrationDetails landRegistrationDetails = new PageObjectLandRegistrationDetails(driver);
+        checkIfLandRegistrationQuestionIsVisible(landRegistrationDetails);
+        landRegistrationDetails.selectTwoPerson();
+        waitSeconds(2);
+
+        PageObjectAgeConfirmation ageConfirmation = new PageObjectAgeConfirmation(driver);
+        checkIfAgeConfirmationQuestionIsVisible(ageConfirmation);
+        ageConfirmation.selectOneOrMoreAboveSeventy();
+        checkIfAgeLimitAlertIsVisible(ageConfirmation);
+        waitSeconds(2);
+
     }
 
     @Test
@@ -116,6 +176,37 @@ public class QuestionnaireTests {
         PageObjectHouseOwner houseOwner = new PageObjectHouseOwner(driver);
         checkIfHouseOwnerQuestionIsVisible(houseOwner);
         houseOwner.selectJa();
+        waitSeconds(2);
+
+        PageObjectPostalCode postalCode = new PageObjectPostalCode(driver);
+        checkIfPostalCodeQuestionIsVisible(postalCode);
+        postalCode.enterPostalCode();
+        postalCode.clickNextButton();
+        waitSeconds(6);
+
+        PageObjectSolarOfferInformation solarOfferInformation = new PageObjectSolarOfferInformation(driver);
+        checkIfSolarInformationTextIsVisible(solarOfferInformation);
+        solarOfferInformation.enterFirstAndLastName();
+        solarOfferInformation.enterStrasse();
+        solarOfferInformation.enterHandyNumber();
+        solarOfferInformation.enterEmail();
+        solarOfferInformation.clickGetFreeInformationButton();
+        waitSeconds(2);
+
+        PageObjectAlmostDone almostDone = new PageObjectAlmostDone(driver);
+        checkIfAlmostDoneTextIsVisible(almostDone);
+        almostDone.clickNextButton();
+        waitSeconds(2);
+
+        PageObjectLandRegistrationDetails landRegistrationDetails = new PageObjectLandRegistrationDetails(driver);
+        checkIfLandRegistrationQuestionIsVisible(landRegistrationDetails);
+        landRegistrationDetails.selectThreeOrMorePersons();
+        waitSeconds(2);
+
+        PageObjectAgeConfirmation ageConfirmation = new PageObjectAgeConfirmation(driver);
+        checkIfAgeConfirmationQuestionIsVisible(ageConfirmation);
+        ageConfirmation.selectOneOrMoreAboveSeventy();
+        checkIfAgeLimitAlertIsVisible(ageConfirmation);
         waitSeconds(2);
     }
 
@@ -148,6 +239,39 @@ public class QuestionnaireTests {
         checkIfHouseOwnerQuestionIsVisible(houseOwner);
         houseOwner.selectNein();
         waitSeconds(2);
+
+        PageObjectPostalCode postalCode = new PageObjectPostalCode(driver);
+        checkIfPostalCodeQuestionIsVisible(postalCode);
+        postalCode.enterPostalCode();
+        postalCode.clickNextButton();
+        waitSeconds(6);
+
+        PageObjectSolarOfferInformation solarOfferInformation = new PageObjectSolarOfferInformation(driver);
+        checkIfSolarInformationTextIsVisible(solarOfferInformation);
+        solarOfferInformation.enterFirstAndLastName();
+        solarOfferInformation.enterStrasse();
+        solarOfferInformation.enterHandyNumber();
+        solarOfferInformation.enterEmail();
+        solarOfferInformation.clickGetFreeInformationButton();
+        waitSeconds(6);
+
+        PageObjectAlmostDone almostDone = new PageObjectAlmostDone(driver);
+        checkIfAlmostDoneTextIsVisible(almostDone);
+        almostDone.clickNextButton();
+        waitSeconds(2);
+
+        PageObjectLandRegistrationDetails landRegistrationDetails = new PageObjectLandRegistrationDetails(driver);
+        checkIfLandRegistrationQuestionIsVisible(landRegistrationDetails);
+        landRegistrationDetails.selectUnkown();
+        waitSeconds(2);
+
+        PageObjectAgeConfirmation ageConfirmation = new PageObjectAgeConfirmation(driver);
+        checkIfAgeConfirmationQuestionIsVisible(ageConfirmation);
+        ageConfirmation.selectOneOrMoreAboveSeventy();
+        checkIfAgeLimitAlertIsVisible(ageConfirmation);
+        waitSeconds(2);
+
+
     }
 
     @After
@@ -192,5 +316,35 @@ public class QuestionnaireTests {
     private void checkIfHouseOwnerQuestionIsVisible(PageObjectHouseOwner obj) {
         boolean isDisplayed = driver.findElement(obj.questionTitle).isDisplayed();
         Assert.assertTrue("Question not visible: Sind Sie Eigentümer des Hauses?", isDisplayed);
+    }
+
+    private void checkIfPostalCodeQuestionIsVisible(PageObjectPostalCode obj) {
+        boolean isDisplayed = driver.findElement(obj.questionTitle).isDisplayed();
+        Assert.assertTrue("Question not visible: Wie lautet Ihre Postleitzahl?", isDisplayed);
+    }
+
+    private void checkIfSolarInformationTextIsVisible(PageObjectSolarOfferInformation obj) {
+        boolean isDisplayed = driver.findElement(obj.offerInformationText).isDisplayed();
+        Assert.assertTrue("Text not visible: Gratulation, das Angebot ist in Ihrer Region noch verfügbar! Wir senden Ihnen gerne kostenlose Informationen zu.", isDisplayed);
+    }
+
+    private void checkIfAlmostDoneTextIsVisible(PageObjectAlmostDone obj) {
+        boolean isDisplayed = driver.findElement(obj.almostDoneText).isDisplayed();
+        Assert.assertTrue("Text not visible: Fast geschafft", isDisplayed);
+    }
+
+    private void checkIfLandRegistrationQuestionIsVisible(PageObjectLandRegistrationDetails obj) {
+        boolean isDisplayed = driver.findElement(obj.questionTitle).isDisplayed();
+        Assert.assertTrue("Question not visible: Wie viele Personen stehen bei Ihrem Haus im Grundbuch?", isDisplayed);
+    }
+
+    private void checkIfAgeConfirmationQuestionIsVisible(PageObjectAgeConfirmation obj) {
+        boolean isDisplayed = driver.findElement(obj.questionTitle).isDisplayed();
+        Assert.assertTrue("Question not visible: Sind alle Personen im Grundbuch unter 70 Jahre alt?", isDisplayed);
+    }
+
+    private void checkIfAgeLimitAlertIsVisible(PageObjectAgeConfirmation obj) {
+        boolean isDisplayed = driver.findElement(obj.ageAlertInfo).isDisplayed();
+        Assert.assertTrue("Question not visible: Sind Sie sich sicher?", isDisplayed);
     }
 }
