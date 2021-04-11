@@ -34,12 +34,12 @@ public class SeleniumTests {
         driver.get(baseUrl);
         //driver.findElement(By.xpath("//div[contains(@class, 'SingleAnswer_AnswersContainer__J2Aul')]/div[1]")).click();
         //waitSeconds(2);
-        driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[2]/div[1]/div[2]")).click();//Nein clicking
-        waitSeconds(2);
-        driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[2]/div[1]/div[2]")).click();//3-4 click
-        waitSeconds(2);
-        driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[1]/div[1]/div[2]")).click();//morgens
-        waitSeconds(2);
+        //driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[2]/div[1]/div[2]")).click();//Nein clicking
+        //waitSeconds(2);
+        //driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[2]/div[1]/div[2]")).click();//3-4 click
+        //waitSeconds(2);
+        //driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[1]/div[1]/div[2]")).click();//morgens
+        //waitSeconds(2);
         driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[1]/div[1]/div[2]")).click();//Ja
         waitSeconds(2);
         driver.findElement(By.xpath("//input[contains(@name, 'zipCode')]")).sendKeys("10367");

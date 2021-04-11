@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaec9377-ac7a-4a42-a6e9-a281cfb7b1e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectRoofType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectElectricityUsage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHouseOwner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectNumberOfPeople.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSkyLight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.enpal.SeleniumTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-de.enpal.SeleniumTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.enpal.SeleniumTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/de.enpal.SeleniumTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/de/enpal/QuestionnaireTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/enpal/QuestionnaireTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/de/enpal/SeleniumTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/enpal/SeleniumTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectRoofType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="120">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#691#692#0" expanded="true" />
@@ -43,11 +45,73 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSkyLight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+            <state relative-caret-position="399">
+              <caret line="148" column="32" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHouseOwner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#661#662#0" expanded="true" />
+                <element signature="e#682#683#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectElectricityUsage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="84" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#735#736#0" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#834#835#0" expanded="true" />
+                <element signature="e#884#885#0" expanded="true" />
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectNumberOfPeople.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1605">
-              <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="125" selection-end-column="5" />
+            <state relative-caret-position="290">
+              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="120" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,7 +157,11 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectRoofType.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSkyLight.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectNumberOfPeople.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectElectricityUsage.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHouseOwner.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" />
       </list>
     </option>
@@ -116,7 +184,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,12 +235,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618086295952" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618090696714" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -193,7 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.QuestionnaireTests.testSattelDachFlow">
+  <component name="RunManager" selected="JUnit.QuestionnaireTests.testAnderesFlow">
     <configuration name="QuestionnaireTests.testAnderesFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Enpal" />
       <extension name="coverage">
@@ -276,8 +344,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.QuestionnaireTests.testSattelDachFlow" />
         <item itemvalue="JUnit.QuestionnaireTests.testAnderesFlow" />
+        <item itemvalue="JUnit.QuestionnaireTests.testSattelDachFlow" />
         <item itemvalue="JUnit.QuestionnaireTests.testFlachDachFlow" />
         <item itemvalue="JUnit.QuestionnaireTests.testPultDachFlow" />
         <item itemvalue="JUnit.QuestionnaireTests.testSatteldachFlow" />
@@ -312,23 +380,13 @@
       <workItem from="1618069685535" duration="1396000" />
       <workItem from="1618072049609" duration="69000" />
       <workItem from="1618076791602" duration="1103000" />
-      <workItem from="1618085304554" duration="989000" />
+      <workItem from="1618085304554" duration="1749000" />
+      <workItem from="1618087121169" duration="1760000" />
+      <workItem from="1618088937776" duration="1752000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QuestionnaireTests_testPultDachFlow - 2021.04.10 at 19h 51m 19s.xml">
-      <configuration name="QuestionnaireTests.testPultDachFlow" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QuestionnaireTests_testPultDachFlow - 2021.04.10 at 19h 51m 32s.xml">
-      <configuration name="QuestionnaireTests.testPultDachFlow" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QuestionnaireTests_testPultDachFlow - 2021.04.10 at 19h 53m 15s.xml">
-      <configuration name="QuestionnaireTests.testPultDachFlow" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QuestionnaireTests_testPultDachFlow - 2021.04.10 at 19h 53m 33s.xml">
-      <configuration name="QuestionnaireTests.testPultDachFlow" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="QuestionnaireTests_testSattelDachFlow - 2021.04.10 at 19h 54m 45s.xml">
       <configuration name="QuestionnaireTests.testSattelDachFlow" configurationId="JUnit" />
     </history-entry>
@@ -347,15 +405,26 @@
     <history-entry file="QuestionnaireTests_testSattelDachFlow - 2021.04.10 at 22h 23m 31s.xml">
       <configuration name="QuestionnaireTests.testSattelDachFlow" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="QuestionnaireTests_testSattelDachFlow - 2021.04.10 at 23h 11m 52s.xml">
+      <configuration name="QuestionnaireTests.testSattelDachFlow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuestionnaireTests_testAnderesFlow - 2021.04.10 at 23h 28m 35s.xml">
+      <configuration name="QuestionnaireTests.testAnderesFlow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuestionnaireTests_testAnderesFlow - 2021.04.10 at 23h 29m 47s.xml">
+      <configuration name="QuestionnaireTests.testAnderesFlow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuestionnaireTests_testAnderesFlow - 2021.04.10 at 23h 38m 29s.xml">
+      <configuration name="QuestionnaireTests.testAnderesFlow" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23829000" />
+    <option name="totallyTimeSpent" value="28101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3190272" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32761088" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -398,10 +467,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectRoofType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="125" selection-end-column="5" />
+        <state relative-caret-position="120">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSkyLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -415,22 +496,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectRoofType.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectNumberOfPeople.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectElectricityUsage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="120" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHouseOwner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+        <state relative-caret-position="399">
+          <caret line="148" column="32" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
