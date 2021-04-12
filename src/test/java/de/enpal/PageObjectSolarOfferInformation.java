@@ -16,20 +16,20 @@ public class PageObjectSolarOfferInformation {
         this.driver = driver;
     }
 
-    public void enterFirstAndLastName() {
-        driver.findElement(firstAndLastNameTextField).sendKeys("Thomas tortal");
+    public void enterFirstAndLastName(String firstLastName) {
+        driver.findElement(firstAndLastNameTextField).sendKeys(firstLastName);
     }
 
-    public void enterStrasse() {
-        driver.findElement(strasseTextField).sendKeys("Gotlinder strasse 26");
+    public void enterStrasse(String address) {
+        driver.findElement(strasseTextField).sendKeys(address);
     }
 
-    public void enterHandyNumber() {
-        driver.findElement(handyNumberTextField).sendKeys("015212141879");
+    public void enterHandyNumber(String phoneNumber) {
+        driver.findElement(handyNumberTextField).sendKeys(phoneNumber);
     }
 
-    public void enterEmail() {
-        driver.findElement(emailTextField).sendKeys("thomas.tortal@gmail.com");
+    public void enterEmail(String emailId) {
+        driver.findElement(emailTextField).sendKeys(emailId);
     }
 
     public void clickGetFreeInformationButton() {

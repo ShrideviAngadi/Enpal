@@ -56,19 +56,20 @@ public class SeleniumTests {
         //waitSeconds(2);
         //driver.findElement(By.xpath("//div[contains(@class,'SingleAnswer_AnswersContainer__J2Aul')]/div[2]")).click();
         //waitSeconds(2);
-        driver.findElement(By.xpath("//div[contains(@class, 'SingleAnswer_AnswersContainer__J2Aul')]/div[1]")).click();
-        waitSeconds(2);
-        driver.findElement(By.xpath("//textarea[contains(@name, 'freetext')]")).sendKeys("selenium testing");
-        waitSeconds(2);
-        driver.findElement(By.xpath("//button[contains(@data-testid, 'freetext-submit')]")).click();
-        waitSeconds(2);
-        driver.findElement(By.xpath("//button[contains(@data-testid, 'submit')]")).click();
-        waitSeconds(2);
+        //driver.findElement(By.xpath("//div[contains(@class, 'SingleAnswer_AnswersContainer__J2Aul')]/div[1]")).click();
+        //waitSeconds(2);
+        //driver.findElement(By.xpath("//textarea[contains(@name, 'freetext')]")).sendKeys("selenium testing");
+        //waitSeconds(2);
+        //driver.findElement(By.xpath("//button[contains(@data-testid, 'freetext-submit')]")).click();
+        //waitSeconds(2);
+        //driver.findElement(By.xpath("//button[contains(@data-testid, 'submit')]")).click();
+        //waitSeconds(2);
 
         //uploading image  1st screen
         WebElement uploadFile=driver.findElement(By.xpath("//input[contains(@data-testid, 'file-input-roof')]"));
         File file = new File("TestImage.jpeg");
-        uploadFile.sendKeys(file.getAbsolutePath());
+        String fullPath = file.getAbsolutePath();
+        uploadFile.sendKeys(fullPath);
         waitSeconds(6);
 
         //2nd screen

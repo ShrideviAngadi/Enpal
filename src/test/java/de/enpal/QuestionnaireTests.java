@@ -4,8 +4,11 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.io.File;
 
 public class QuestionnaireTests {
 
@@ -61,10 +64,15 @@ public class QuestionnaireTests {
 
         PageObjectSolarOfferInformation solarOfferInformation = new PageObjectSolarOfferInformation(driver);
         checkIfSolarInformationTextIsVisible(solarOfferInformation);
-        solarOfferInformation.enterFirstAndLastName();
-        solarOfferInformation.enterStrasse();
-        solarOfferInformation.enterHandyNumber();
-        solarOfferInformation.enterEmail();
+
+        boolean isButtonEnabled = driver.findElement(solarOfferInformation.getFreeInformationButton).isEnabled();
+        Assert.assertFalse("Form is empty but getOffers button is enabled", isButtonEnabled);
+
+
+        solarOfferInformation.enterFirstAndLastName("Thomas tortal");
+        solarOfferInformation.enterStrasse("Gotlinder strasse 26");
+        solarOfferInformation.enterHandyNumber("015216778865");
+        solarOfferInformation.enterEmail("thomas.tortal@gmail.com");
         solarOfferInformation.clickGetFreeInformationButton();
         waitSeconds(4);
 
@@ -82,6 +90,75 @@ public class QuestionnaireTests {
         checkIfAgeConfirmationQuestionIsVisible(ageConfirmation);
         ageConfirmation.selectAllUnderSeventy();
         waitSeconds(2);
+
+        PageObjectHouseFeatures houseFeatures = new PageObjectHouseFeatures(driver);
+        checkIfHouseFeaturesQuestionIsVisible(houseFeatures);
+        houseFeatures.enterHouseFeatures();
+        houseFeatures.clickOnNextButton();
+        waitSeconds(2);
+
+        PageObjectHousePhotosUpload uploadPhotos = new PageObjectHousePhotosUpload(driver);
+        checkIfUploadHousePhotosTextIsVisible(uploadPhotos);
+        uploadPhotos.clickOnUploadPhotosButton();
+        waitSeconds(2);
+
+
+        PageObjectHouseImagesUpload imagesUpload = new PageObjectHouseImagesUpload(driver);
+        checkIfRoofSurfacesTextIsVisible(imagesUpload);
+
+        boolean isCameraButtonEnabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButtonEnabled);
+
+        File file = new File("TestImage.jpeg");
+        imagesUpload.uploadRoofImage(file.getAbsolutePath());
+        waitSeconds(6);
+
+        imagesUpload.clickNextIcon();
+        waitSeconds(2);
+
+        checkIfHouseSurroundingsTextIsVisible(imagesUpload);
+
+        boolean isCameraButton2Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButton2Enabled);
+
+        File file1 = new File("TestImage.jpeg");
+        imagesUpload.uploadSurroundingsHomeImage(file1.getAbsolutePath());
+        waitSeconds(6);
+
+        imagesUpload.clickCounterCaseArrow();
+        waitSeconds(2);
+
+        checkIfOpenMeterCabinetTextIsVisible(imagesUpload);
+
+        boolean isCameraButton3Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButton3Enabled);
+
+        File file2 = new File("TestImage.jpeg");
+        imagesUpload.meterCabinetImageUpload(file2.getAbsolutePath());
+        waitSeconds(6);
+
+        imagesUpload.clickElectricityBillArrow();
+        waitSeconds(2);
+
+        checkIfActualElectricityBillTextIsVisible(imagesUpload);
+
+        boolean isCameraButton4Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButton4Enabled);
+
+        File file3 = new File("TestImage.jpeg");
+        imagesUpload.actualElectricityBillUpload(file3.getAbsolutePath());
+        waitSeconds(6);
+
+        imagesUpload.clickSendPhotos();
+        waitSeconds(2);
+
+        checkIfAllImagesUploadedQuestionIsVisible(imagesUpload);
+        imagesUpload.clickDoneButton();
+        waitSeconds(2);
+
+        imagesUpload.clickOnTermsAndConditionLink();
+        waitSeconds(2);
+
 
     }
 
@@ -123,12 +200,16 @@ public class QuestionnaireTests {
 
         PageObjectSolarOfferInformation solarOfferInformation = new PageObjectSolarOfferInformation(driver);
         checkIfSolarInformationTextIsVisible(solarOfferInformation);
-        solarOfferInformation.enterFirstAndLastName();
-        solarOfferInformation.enterStrasse();
-        solarOfferInformation.enterHandyNumber();
-        solarOfferInformation.enterEmail();
+
+        boolean isButtonEnabled = driver.findElement(solarOfferInformation.getFreeInformationButton).isEnabled();
+        Assert.assertFalse("Form is empty but getOffers button is enabled", isButtonEnabled);
+
+        solarOfferInformation.enterFirstAndLastName("Thomas tortal");
+        solarOfferInformation.enterStrasse("Gotlinder strasse 26");
+        solarOfferInformation.enterHandyNumber("015216776687");
+        solarOfferInformation.enterEmail("thomas.tortal@gmail.com");
         solarOfferInformation.clickGetFreeInformationButton();
-        waitSeconds(2);
+        waitSeconds(6);
 
         PageObjectAlmostDone almostDone = new PageObjectAlmostDone(driver);
         checkIfAlmostDoneTextIsVisible(almostDone);
@@ -144,12 +225,72 @@ public class QuestionnaireTests {
         checkIfAgeConfirmationQuestionIsVisible(ageConfirmation);
         ageConfirmation.selectOneOrMoreAboveSeventy();
         checkIfAgeLimitAlertIsVisible(ageConfirmation);
+        ageConfirmation.selectAllUnderSeventy();
         waitSeconds(2);
 
+        PageObjectHouseFeatures houseFeatures = new PageObjectHouseFeatures(driver);
+        checkIfHouseFeaturesQuestionIsVisible(houseFeatures);
+        houseFeatures.enterHouseFeatures();
+        houseFeatures.clickOnNextButton();
+        waitSeconds(2);
+
+        PageObjectHousePhotosUpload uploadPhotos = new PageObjectHousePhotosUpload(driver);
+        checkIfUploadHousePhotosTextIsVisible(uploadPhotos);
+        uploadPhotos.clickOnUploadPhotosButton();
+        waitSeconds(2);
+
+        PageObjectHouseImagesUpload imagesUpload = new PageObjectHouseImagesUpload(driver);
+        checkIfRoofSurfacesTextIsVisible(imagesUpload);
+        File file = new File("TestImage.jpeg");
+        imagesUpload.uploadRoofImage(file.getAbsolutePath());
+
+        boolean isCameraButtonEnabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButtonEnabled);
+
+        imagesUpload.clickNextIcon();
+        waitSeconds(2);
+
+        checkIfHouseSurroundingsTextIsVisible(imagesUpload);
+
+        boolean isCameraButton2Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButton2Enabled);
+
+        File file1 = new File("TestImage.jpeg");
+        imagesUpload.uploadSurroundingsHomeImage(file1.getAbsolutePath());
+        waitSeconds(6);
+
+        imagesUpload.clickCounterCaseArrow();
+        waitSeconds(2);
+
+        checkIfOpenMeterCabinetTextIsVisible(imagesUpload);
+
+        boolean isCameraButton3Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButton3Enabled);
+
+        File file2 = new File("TestImage.jpeg");
+        imagesUpload.meterCabinetImageUpload(file2.getAbsolutePath());
+        waitSeconds(6);
+
+        imagesUpload.clickElectricityBillArrow();
+        waitSeconds(2);
+
+        checkIfActualElectricityBillTextIsVisible(imagesUpload);
+
+        boolean isCameraButton4Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButton4Enabled);
+
+        File file3 = new File("TestImage.jpeg");
+        imagesUpload.actualElectricityBillUpload(file3.getAbsolutePath());
+        waitSeconds(6);
+
+        imagesUpload.clickSendPhotos();
+        waitSeconds(2);
+
+        boolean isTermsAndConditionLinkVisible = driver.findElement(imagesUpload.termsAndConditionsLinkText).isDisplayed();
+        Assert.assertTrue(isTermsAndConditionLinkVisible);
     }
 
     @Test
-
     public void testPultDachFlow() throws Exception {
         driver.get(baseUrl);
 
@@ -186,10 +327,14 @@ public class QuestionnaireTests {
 
         PageObjectSolarOfferInformation solarOfferInformation = new PageObjectSolarOfferInformation(driver);
         checkIfSolarInformationTextIsVisible(solarOfferInformation);
-        solarOfferInformation.enterFirstAndLastName();
-        solarOfferInformation.enterStrasse();
-        solarOfferInformation.enterHandyNumber();
-        solarOfferInformation.enterEmail();
+
+        boolean isButtonEnabled = driver.findElement(solarOfferInformation.getFreeInformationButton).isEnabled();
+        Assert.assertFalse("Form is empty but getOffers button is enabled", isButtonEnabled);
+
+        solarOfferInformation.enterFirstAndLastName("Thomas tortal");
+        solarOfferInformation.enterStrasse("Gotlinder strasse 26");
+        solarOfferInformation.enterHandyNumber("015216778876");
+        solarOfferInformation.enterEmail("thomas.tortal@gmail.com");
         solarOfferInformation.clickGetFreeInformationButton();
         waitSeconds(2);
 
@@ -208,6 +353,66 @@ public class QuestionnaireTests {
         ageConfirmation.selectOneOrMoreAboveSeventy();
         checkIfAgeLimitAlertIsVisible(ageConfirmation);
         waitSeconds(2);
+
+        PageObjectHouseFeatures houseFeatures = new PageObjectHouseFeatures(driver);
+        checkIfHouseFeaturesQuestionIsVisible(houseFeatures);
+        houseFeatures.enterHouseFeatures();
+        houseFeatures.clickOnNextButton();
+        waitSeconds(2);
+
+        PageObjectHousePhotosUpload uploadPhotos = new PageObjectHousePhotosUpload(driver);
+        checkIfUploadHousePhotosTextIsVisible(uploadPhotos);
+        uploadPhotos.clickOnUploadPhotosButton();
+        waitSeconds(2);
+
+        PageObjectHouseImagesUpload imagesUpload = new PageObjectHouseImagesUpload(driver);
+        checkIfRoofSurfacesTextIsVisible(imagesUpload);
+        File file = new File("TestImage.jpeg");
+        imagesUpload.uploadRoofImage(file.getAbsolutePath());
+
+        boolean isCameraButtonEnabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButtonEnabled);
+
+        imagesUpload.clickNextIcon();
+        waitSeconds(2);
+
+        checkIfHouseSurroundingsTextIsVisible(imagesUpload);
+
+        boolean isCameraButton2Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButton2Enabled);
+
+        File file1 = new File("TestImage.jpeg");
+        imagesUpload.uploadSurroundingsHomeImage(file1.getAbsolutePath());
+        waitSeconds(6);
+
+        imagesUpload.clickCounterCaseArrow();
+        waitSeconds(2);
+
+        checkIfOpenMeterCabinetTextIsVisible(imagesUpload);
+
+        boolean isCameraButton3Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButton3Enabled);
+
+        File file2 = new File("TestImage.jpeg");
+        imagesUpload.meterCabinetImageUpload(file2.getAbsolutePath());
+        waitSeconds(6);
+
+        imagesUpload.clickElectricityBillArrow();
+        waitSeconds(2);
+
+        checkIfActualElectricityBillTextIsVisible(imagesUpload);
+
+        boolean isCameraButton4Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButton4Enabled);
+
+        File file3 = new File("TestImage.jpeg");
+        imagesUpload.actualElectricityBillUpload(file3.getAbsolutePath());
+        waitSeconds(6);
+
+        imagesUpload.clickSendPhotos();
+        waitSeconds(2);
+
+
     }
 
     @Test
@@ -248,10 +453,14 @@ public class QuestionnaireTests {
 
         PageObjectSolarOfferInformation solarOfferInformation = new PageObjectSolarOfferInformation(driver);
         checkIfSolarInformationTextIsVisible(solarOfferInformation);
-        solarOfferInformation.enterFirstAndLastName();
-        solarOfferInformation.enterStrasse();
-        solarOfferInformation.enterHandyNumber();
-        solarOfferInformation.enterEmail();
+
+        boolean isButtonEnabled = driver.findElement(solarOfferInformation.getFreeInformationButton).isEnabled();
+        Assert.assertFalse("Form is empty but getOffers button is enabled", isButtonEnabled);
+
+        solarOfferInformation.enterFirstAndLastName("Thomas tortal");
+        solarOfferInformation.enterStrasse("Gotlinder strasse 26");
+        solarOfferInformation.enterHandyNumber("015212167876");
+        solarOfferInformation.enterEmail("thomas.tortal@gmail.com");
         solarOfferInformation.clickGetFreeInformationButton();
         waitSeconds(6);
 
@@ -270,6 +479,65 @@ public class QuestionnaireTests {
         ageConfirmation.selectOneOrMoreAboveSeventy();
         checkIfAgeLimitAlertIsVisible(ageConfirmation);
         waitSeconds(2);
+
+        PageObjectHouseFeatures houseFeatures = new PageObjectHouseFeatures(driver);
+        checkIfHouseFeaturesQuestionIsVisible(houseFeatures);
+        houseFeatures.enterHouseFeatures();
+        houseFeatures.clickOnNextButton();
+        waitSeconds(2);
+
+        PageObjectHousePhotosUpload uploadPhotos = new PageObjectHousePhotosUpload(driver);
+        checkIfUploadHousePhotosTextIsVisible(uploadPhotos);
+        uploadPhotos.clickOnUploadPhotosButton();
+        waitSeconds(2);
+
+        PageObjectHouseImagesUpload imagesUpload = new PageObjectHouseImagesUpload(driver);
+        checkIfRoofSurfacesTextIsVisible(imagesUpload);
+        File file = new File("TestImage.jpeg");
+        imagesUpload.uploadRoofImage(file.getAbsolutePath());
+
+        boolean isCameraButtonEnabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButtonEnabled);
+
+        imagesUpload.clickNextIcon();
+        waitSeconds(2);
+
+        checkIfHouseSurroundingsTextIsVisible(imagesUpload);
+
+        boolean isCameraButton2Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButton2Enabled);
+
+        File file1 = new File("TestImage.jpeg");
+        imagesUpload.uploadSurroundingsHomeImage(file1.getAbsolutePath());
+        waitSeconds(6);
+
+        imagesUpload.clickCounterCaseArrow();
+        waitSeconds(2);
+
+        checkIfOpenMeterCabinetTextIsVisible(imagesUpload);
+
+        boolean isCameraButton3Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButton3Enabled);
+
+        File file2 = new File("TestImage.jpeg");
+        imagesUpload.meterCabinetImageUpload(file2.getAbsolutePath());
+        waitSeconds(6);
+
+        imagesUpload.clickElectricityBillArrow();
+        waitSeconds(2);
+
+        checkIfActualElectricityBillTextIsVisible(imagesUpload);
+
+        boolean isCameraButton4Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
+        Assert.assertTrue("Camera button should be Enabled", isCameraButton4Enabled);
+
+        File file3 = new File("TestImage.jpeg");
+        imagesUpload.actualElectricityBillUpload(file3.getAbsolutePath());
+        waitSeconds(6);
+
+        imagesUpload.clickSendPhotos();
+        waitSeconds(2);
+
 
 
     }
@@ -347,4 +615,42 @@ public class QuestionnaireTests {
         boolean isDisplayed = driver.findElement(obj.ageAlertInfo).isDisplayed();
         Assert.assertTrue("Question not visible: Sind Sie sich sicher?", isDisplayed);
     }
+
+    private void checkIfHouseFeaturesQuestionIsVisible(PageObjectHouseFeatures obj) {
+        boolean isDisplayed = driver.findElement(obj.questionTitle).isDisplayed();
+        Assert.assertTrue("Question not visible: Gibt es Besonderheiten bei Ihrem Dach oder Haus, die für eine Planung relevant sein könnten?", isDisplayed);
+    }
+
+    private void checkIfUploadHousePhotosTextIsVisible(PageObjectHousePhotosUpload obj) {
+        boolean isDisplayed = driver.findElement(obj.housePhotosUploadText).isDisplayed();
+        Assert.assertTrue("Question not visible: Jetzt  Fotos Ihres Daches hochladen und direkt Angebot erhalten", isDisplayed);
+    }
+
+    private void checkIfRoofSurfacesTextIsVisible(PageObjectHouseImagesUpload obj) {
+        boolean isDisplayed = driver.findElement(obj.allRoofSurfacesImageText).isDisplayed();
+        Assert.assertTrue("Question not visible: Alle Dachflächen", isDisplayed);
+    }
+
+    private void checkIfHouseSurroundingsTextIsVisible(PageObjectHouseImagesUpload obj) {
+        boolean isDisplayed = driver.findElement(obj.houseWithSurroundingsText).isDisplayed();
+        Assert.assertTrue("Question not visible: Haus mit Umgebung", isDisplayed);
+    }
+
+    private void checkIfOpenMeterCabinetTextIsVisible(PageObjectHouseImagesUpload obj) {
+        boolean isDisplayed = driver.findElement(obj.openMeterCabinetText).isDisplayed();
+        Assert.assertTrue("Question not visible: Offener Zählerschrank", isDisplayed);
+    }
+
+
+    private void checkIfActualElectricityBillTextIsVisible(PageObjectHouseImagesUpload obj) {
+        boolean isDisplayed = driver.findElement(obj.currentElectricityBillText).isDisplayed();
+        Assert.assertTrue("Question not visible: Aktuelle Stromrechnung", isDisplayed);
+    }
+
+    private void checkIfAllImagesUploadedQuestionIsVisible(PageObjectHouseImagesUpload obj) {
+        boolean isDisplayed = driver.findElement(obj.allImagesUploadedText).isDisplayed();
+        Assert.assertTrue("Question not visible: Alles hochgeladen?", isDisplayed);
+    }
+
+
 }
