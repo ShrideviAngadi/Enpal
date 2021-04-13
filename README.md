@@ -1,5 +1,5 @@
-# selenium-example
-An example project of selenium using ChromeWebDriver, HtmlUnitDriver, FirefoxFriver
+# Enpal Task
+This is a take home task by Enpal to show my automation skills. This project uses Java and Selenium WebDriver.
 
 
 ## Prerequisites ##
