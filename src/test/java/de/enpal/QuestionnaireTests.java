@@ -21,8 +21,8 @@ public class QuestionnaireTests {
 
     @Before
     public void setUp() throws Exception {
-        WebDriverManager.firefoxdriver().setup();
-        driver = new FirefoxDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         baseUrl = "https://dynamic-slider-staging.azurewebsites.net/";
 

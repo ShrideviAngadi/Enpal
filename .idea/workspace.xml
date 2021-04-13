@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaec9377-ac7a-4a42-a6e9-a281cfb7b1e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.enpal.QuestionnaireTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-de.enpal.QuestionnaireTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.enpal.QuestionnaireTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/de.enpal.QuestionnaireTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/enpal/PageObjectSolarOfferInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/enpal/PageObjectSolarOfferInformation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +17,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-116">
-              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="129">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,8 +167,8 @@
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHouseImagesUpload.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" />
       </list>
     </option>
   </component>
@@ -247,7 +247,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618307667432" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618307825591" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -411,7 +411,7 @@
       <workItem from="1618299561817" duration="1789000" />
       <workItem from="1618301646605" duration="1638000" />
       <workItem from="1618304609033" duration="1644000" />
-      <workItem from="1618306433409" duration="1050000" />
+      <workItem from="1618306433409" duration="1266000" />
     </task>
     <servers />
   </component>
@@ -448,7 +448,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59817000" />
+    <option name="totallyTimeSpent" value="60033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
@@ -674,8 +674,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="129">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
