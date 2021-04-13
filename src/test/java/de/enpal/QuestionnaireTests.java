@@ -17,18 +17,17 @@ public class QuestionnaireTests {
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
 
-
     @Before
     public void setUp() throws Exception {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         baseUrl = "https://dynamic-slider-staging.azurewebsites.net/";
+
+        driver.get(baseUrl);
     }
 
     @Test
-
     public void testSattelDachFlow() throws Exception {
-        driver.get(baseUrl);
         waitSeconds(2);
 
         PageObjectRoofType rooftype = new PageObjectRoofType(driver);
@@ -158,14 +157,10 @@ public class QuestionnaireTests {
 
         imagesUpload.clickOnTermsAndConditionLink();
         waitSeconds(2);
-
-
     }
 
     @Test
-
-    public void testFlachDachFlow() throws Exception {
-        driver.get(baseUrl);
+    public void testContactFormValidation() throws Exception {
 
         PageObjectRoofType rooftype = new PageObjectRoofType(driver);
         checkIfRoofTypeQuestionIsVisible(rooftype);
@@ -204,9 +199,67 @@ public class QuestionnaireTests {
         boolean isButtonEnabled = driver.findElement(solarOfferInformation.getFreeInformationButton).isEnabled();
         Assert.assertFalse("Form is empty but getOffers button is enabled", isButtonEnabled);
 
+        boolean isGetInfoormationButtonEnabled = driver.findElement(solarOfferInformation.getFreeInformationButton).isEnabled();
+        Assert.assertFalse("getFreeInformationButton should be disabled when form is empty", isGetInfoormationButtonEnabled);
+
+        solarOfferInformation.enterFirstAndLastName("Thomas");
+        solarOfferInformation.enterStrasse("Gotlinder strasse 26");
+
+        boolean isFirstAndLastNameErrorVisible = driver.findElement(solarOfferInformation.nameErrorText).isDisplayed();
+        Assert.assertTrue("First and last name validation failed", isFirstAndLastNameErrorVisible);
+
+        solarOfferInformation.enterEmail("thomas.tortal@gmail.abcd");
+
+        boolean phoneNumberErrorVisible = driver.findElement(solarOfferInformation.phoneNumberErrorText).isDisplayed();
+        Assert.assertTrue("Phone number validation failed", phoneNumberErrorVisible);
+
+        boolean isEmailErrorVisible = driver.findElement(solarOfferInformation.emailErrorText).isDisplayed();
+        Assert.assertTrue("Email validation failed", isEmailErrorVisible);
+    }
+
+    @Test
+    public void testPultDachFlow() throws Exception {
+
+        PageObjectRoofType rooftype = new PageObjectRoofType(driver);
+        checkIfRoofTypeQuestionIsVisible(rooftype);
+        rooftype.selectPultdach();
+        waitSeconds(2);
+
+        PageObjectSkyLight skyLight = new PageObjectSkyLight(driver);
+        checkIfSkyLightQuestionIsVisible(skyLight);
+        skyLight.selectNein();
+        waitSeconds(2);
+
+        PageObjectNumberOfPeople numberOfPeople = new PageObjectNumberOfPeople(driver);
+        checkIfNumberOfPeopleQuestionIsVisible(numberOfPeople);
+        numberOfPeople.selectFiveAndMore();
+        waitSeconds(2);
+
+        PageObjectElectricityUsage electricityUsage = new PageObjectElectricityUsage(driver);
+        checkIfElectricityUsageQuestionIsVisible(electricityUsage);
+        electricityUsage.selectAllDay();
+        waitSeconds(2);
+
+        PageObjectHouseOwner houseOwner = new PageObjectHouseOwner(driver);
+        checkIfHouseOwnerQuestionIsVisible(houseOwner);
+        houseOwner.selectJa();
+        waitSeconds(2);
+
+        PageObjectPostalCode postalCode = new PageObjectPostalCode(driver);
+        checkIfPostalCodeQuestionIsVisible(postalCode);
+        postalCode.enterPostalCode();
+        postalCode.clickNextButton();
+        waitSeconds(6);
+
+        PageObjectSolarOfferInformation solarOfferInformation = new PageObjectSolarOfferInformation(driver);
+        checkIfSolarInformationTextIsVisible(solarOfferInformation);
+
+        boolean isButtonEnabled = driver.findElement(solarOfferInformation.getFreeInformationButton).isEnabled();
+        Assert.assertFalse("Form is empty but getOffers button is enabled", isButtonEnabled);
+
         solarOfferInformation.enterFirstAndLastName("Thomas tortal");
         solarOfferInformation.enterStrasse("Gotlinder strasse 26");
-        solarOfferInformation.enterHandyNumber("015216776687");
+        solarOfferInformation.enterHandyNumber("015216778876");
         solarOfferInformation.enterEmail("thomas.tortal@gmail.com");
         solarOfferInformation.clickGetFreeInformationButton();
         waitSeconds(6);
@@ -218,13 +271,14 @@ public class QuestionnaireTests {
 
         PageObjectLandRegistrationDetails landRegistrationDetails = new PageObjectLandRegistrationDetails(driver);
         checkIfLandRegistrationQuestionIsVisible(landRegistrationDetails);
-        landRegistrationDetails.selectTwoPerson();
+        landRegistrationDetails.selectUnkown();
         waitSeconds(2);
 
         PageObjectAgeConfirmation ageConfirmation = new PageObjectAgeConfirmation(driver);
         checkIfAgeConfirmationQuestionIsVisible(ageConfirmation);
         ageConfirmation.selectOneOrMoreAboveSeventy();
         checkIfAgeLimitAlertIsVisible(ageConfirmation);
+
         ageConfirmation.selectAllUnderSeventy();
         waitSeconds(2);
 
@@ -286,139 +340,11 @@ public class QuestionnaireTests {
         imagesUpload.clickSendPhotos();
         waitSeconds(2);
 
-        boolean isTermsAndConditionLinkVisible = driver.findElement(imagesUpload.termsAndConditionsLinkText).isDisplayed();
-        Assert.assertTrue(isTermsAndConditionLinkVisible);
-    }
-
-    @Test
-    public void testPultDachFlow() throws Exception {
-        driver.get(baseUrl);
-
-        PageObjectRoofType rooftype = new PageObjectRoofType(driver);
-        checkIfRoofTypeQuestionIsVisible(rooftype);
-        rooftype.selectPultdach();
-        waitSeconds(2);
-
-        PageObjectSkyLight skyLight = new PageObjectSkyLight(driver);
-        checkIfSkyLightQuestionIsVisible(skyLight);
-        skyLight.selectNein();
-        waitSeconds(2);
-
-        PageObjectNumberOfPeople numberOfPeople = new PageObjectNumberOfPeople(driver);
-        checkIfNumberOfPeopleQuestionIsVisible(numberOfPeople);
-        numberOfPeople.selectFiveAndMore();
-        waitSeconds(2);
-
-        PageObjectElectricityUsage electricityUsage = new PageObjectElectricityUsage(driver);
-        checkIfElectricityUsageQuestionIsVisible(electricityUsage);
-        electricityUsage.selectAllDay();
-        waitSeconds(2);
-
-        PageObjectHouseOwner houseOwner = new PageObjectHouseOwner(driver);
-        checkIfHouseOwnerQuestionIsVisible(houseOwner);
-        houseOwner.selectJa();
-        waitSeconds(2);
-
-        PageObjectPostalCode postalCode = new PageObjectPostalCode(driver);
-        checkIfPostalCodeQuestionIsVisible(postalCode);
-        postalCode.enterPostalCode();
-        postalCode.clickNextButton();
-        waitSeconds(6);
-
-        PageObjectSolarOfferInformation solarOfferInformation = new PageObjectSolarOfferInformation(driver);
-        checkIfSolarInformationTextIsVisible(solarOfferInformation);
-
-        boolean isButtonEnabled = driver.findElement(solarOfferInformation.getFreeInformationButton).isEnabled();
-        Assert.assertFalse("Form is empty but getOffers button is enabled", isButtonEnabled);
-
-        solarOfferInformation.enterFirstAndLastName("Thomas tortal");
-        solarOfferInformation.enterStrasse("Gotlinder strasse 26");
-        solarOfferInformation.enterHandyNumber("015216778876");
-        solarOfferInformation.enterEmail("thomas.tortal@gmail.com");
-        solarOfferInformation.clickGetFreeInformationButton();
-        waitSeconds(2);
-
-        PageObjectAlmostDone almostDone = new PageObjectAlmostDone(driver);
-        checkIfAlmostDoneTextIsVisible(almostDone);
-        almostDone.clickNextButton();
-        waitSeconds(2);
-
-        PageObjectLandRegistrationDetails landRegistrationDetails = new PageObjectLandRegistrationDetails(driver);
-        checkIfLandRegistrationQuestionIsVisible(landRegistrationDetails);
-        landRegistrationDetails.selectThreeOrMorePersons();
-        waitSeconds(2);
-
-        PageObjectAgeConfirmation ageConfirmation = new PageObjectAgeConfirmation(driver);
-        checkIfAgeConfirmationQuestionIsVisible(ageConfirmation);
-        ageConfirmation.selectOneOrMoreAboveSeventy();
-        checkIfAgeLimitAlertIsVisible(ageConfirmation);
-        waitSeconds(2);
-
-        PageObjectHouseFeatures houseFeatures = new PageObjectHouseFeatures(driver);
-        checkIfHouseFeaturesQuestionIsVisible(houseFeatures);
-        houseFeatures.enterHouseFeatures();
-        houseFeatures.clickOnNextButton();
-        waitSeconds(2);
-
-        PageObjectHousePhotosUpload uploadPhotos = new PageObjectHousePhotosUpload(driver);
-        checkIfUploadHousePhotosTextIsVisible(uploadPhotos);
-        uploadPhotos.clickOnUploadPhotosButton();
-        waitSeconds(2);
-
-        PageObjectHouseImagesUpload imagesUpload = new PageObjectHouseImagesUpload(driver);
-        checkIfRoofSurfacesTextIsVisible(imagesUpload);
-        File file = new File("TestImage.jpeg");
-        imagesUpload.uploadRoofImage(file.getAbsolutePath());
-
-        boolean isCameraButtonEnabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
-        Assert.assertTrue("Camera button should be Enabled", isCameraButtonEnabled);
-
-        imagesUpload.clickNextIcon();
-        waitSeconds(2);
-
-        checkIfHouseSurroundingsTextIsVisible(imagesUpload);
-
-        boolean isCameraButton2Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
-        Assert.assertTrue("Camera button should be Enabled", isCameraButton2Enabled);
-
-        File file1 = new File("TestImage.jpeg");
-        imagesUpload.uploadSurroundingsHomeImage(file1.getAbsolutePath());
-        waitSeconds(6);
-
-        imagesUpload.clickCounterCaseArrow();
-        waitSeconds(2);
-
-        checkIfOpenMeterCabinetTextIsVisible(imagesUpload);
-
-        boolean isCameraButton3Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
-        Assert.assertTrue("Camera button should be Enabled", isCameraButton3Enabled);
-
-        File file2 = new File("TestImage.jpeg");
-        imagesUpload.meterCabinetImageUpload(file2.getAbsolutePath());
-        waitSeconds(6);
-
-        imagesUpload.clickElectricityBillArrow();
-        waitSeconds(2);
-
-        checkIfActualElectricityBillTextIsVisible(imagesUpload);
-
-        boolean isCameraButton4Enabled = driver.findElement(imagesUpload.cameraIcon).isEnabled();
-        Assert.assertTrue("Camera button should be Enabled", isCameraButton4Enabled);
-
-        File file3 = new File("TestImage.jpeg");
-        imagesUpload.actualElectricityBillUpload(file3.getAbsolutePath());
-        waitSeconds(6);
-
-        imagesUpload.clickSendPhotos();
-        waitSeconds(2);
-
 
     }
 
     @Test
-
     public void testAnderesFlow() throws Exception {
-        driver.get(baseUrl);
 
         PageObjectRoofType rooftype = new PageObjectRoofType(driver);
         checkIfRoofTypeQuestionIsVisible(rooftype);
@@ -478,6 +404,8 @@ public class QuestionnaireTests {
         checkIfAgeConfirmationQuestionIsVisible(ageConfirmation);
         ageConfirmation.selectOneOrMoreAboveSeventy();
         checkIfAgeLimitAlertIsVisible(ageConfirmation);
+
+        ageConfirmation.selectAllUnderSeventy();
         waitSeconds(2);
 
         PageObjectHouseFeatures houseFeatures = new PageObjectHouseFeatures(driver);
@@ -537,19 +465,11 @@ public class QuestionnaireTests {
 
         imagesUpload.clickSendPhotos();
         waitSeconds(2);
-
-
-
     }
 
     @After
     public void tearDown() throws Exception {
-
-
         driver.quit();
-        String verificationErrorString = verificationErrors.toString();
-        if (!"".equals(verificationErrorString)) {
-        }
     }
 
     private void waitSeconds(int seconds) {
@@ -651,6 +571,4 @@ public class QuestionnaireTests {
         boolean isDisplayed = driver.findElement(obj.allImagesUploadedText).isDisplayed();
         Assert.assertTrue("Question not visible: Alles hochgeladen?", isDisplayed);
     }
-
-
 }

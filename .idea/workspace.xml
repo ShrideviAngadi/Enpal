@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aaec9377-ac7a-4a42-a6e9-a281cfb7b1e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHouseFeatures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHouseImagesUpload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHousePhotosUpload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.enpal.SeleniumTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-de.enpal.SeleniumTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.enpal.SeleniumTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/de.enpal.SeleniumTests.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/de/enpal/PageObjectSolarOfferInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/enpal/PageObjectSolarOfferInformation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/de/enpal/QuestionnaireTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/enpal/QuestionnaireTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/enpal/SeleniumTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/enpal/SeleniumTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1163">
-              <caret line="228" column="21" selection-start-line="228" selection-start-column="21" selection-end-line="228" selection-end-column="21" />
+            <state relative-caret-position="111">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,29 +34,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectAgeConfirmation.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#655#656#0" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
-                <element signature="e#841#842#0" expanded="true" />
-                <element signature="e#906#907#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHouseImagesUpload.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="91">
+              <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -99,15 +78,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
+            <state relative-caret-position="204">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1210#1211#0" expanded="true" />
-                <element signature="e#1278#1279#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="656" column="15" selection-start-line="656" selection-start-column="15" selection-end-line="656" selection-end-column="15" />
+              <folding>
+                <element signature="e#24535#24536#0" expanded="true" />
+                <element signature="e#24581#24582#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,13 +147,17 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>driver.get(baseUrl);</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectRoofType.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSkyLight.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectNumberOfPeople.java" />
@@ -178,9 +172,10 @@
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObejectHousePhotosUpload.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHousePhotosUpload.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHouseImagesUpload.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java" />
       </list>
     </option>
   </component>
@@ -201,8 +196,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,12 +247,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618263319368" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618302960394" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -279,23 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.QuestionnaireTests.testFlachDachFlow">
-    <configuration name="QuestionnaireTests.hyperlinkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Enpal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="de.enpal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="de.enpal" />
-      <option name="MAIN_CLASS_NAME" value="de.enpal.QuestionnaireTests" />
-      <option name="METHOD_NAME" value="hyperlinkTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.QuestionnaireTests.testContactFormValidation">
     <configuration name="QuestionnaireTests.testAnderesFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Enpal" />
       <extension name="coverage">
@@ -307,6 +286,22 @@
       <option name="PACKAGE_NAME" value="de.enpal" />
       <option name="MAIN_CLASS_NAME" value="de.enpal.QuestionnaireTests" />
       <option name="METHOD_NAME" value="testAnderesFlow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestionnaireTests.testContactFormValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Enpal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.enpal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.enpal" />
+      <option name="MAIN_CLASS_NAME" value="de.enpal.QuestionnaireTests" />
+      <option name="METHOD_NAME" value="testContactFormValidation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -362,11 +357,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.QuestionnaireTests.testFlachDachFlow" />
-        <item itemvalue="JUnit.QuestionnaireTests.hyperlinkTest" />
+        <item itemvalue="JUnit.QuestionnaireTests.testContactFormValidation" />
         <item itemvalue="JUnit.QuestionnaireTests.testSattelDachFlow" />
         <item itemvalue="JUnit.QuestionnaireTests.testAnderesFlow" />
         <item itemvalue="JUnit.QuestionnaireTests.testPultDachFlow" />
+        <item itemvalue="JUnit.QuestionnaireTests.testFlachDachFlow" />
       </list>
     </recent_temporary>
   </component>
@@ -417,50 +412,54 @@
       <workItem from="1618252588655" duration="974000" />
       <workItem from="1618254397711" duration="1015000" />
       <workItem from="1618259083220" duration="323000" />
-      <workItem from="1618262464671" duration="846000" />
+      <workItem from="1618262464671" duration="1353000" />
+      <workItem from="1618295098864" duration="1951000" />
+      <workItem from="1618297156975" duration="1714000" />
+      <workItem from="1618299561817" duration="1789000" />
+      <workItem from="1618301646605" duration="1248000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QuestionnaireTests_hyperlinkTest - 2021.04.12 at 21h 08m 39s.xml">
-      <configuration name="QuestionnaireTests.hyperlinkTest" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testContactFormValidation - 2021.04.13 at 09h 59m 44s.xml">
+      <configuration name="QuestionnaireTests.testContactFormValidation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuestionnaireTests_hyperlinkTest - 2021.04.12 at 21h 09m 49s.xml">
-      <configuration name="QuestionnaireTests.hyperlinkTest" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testContactFormValidation - 2021.04.13 at 10h 00m 42s.xml">
+      <configuration name="QuestionnaireTests.testContactFormValidation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuestionnaireTests_hyperlinkTest - 2021.04.12 at 21h 10m 50s.xml">
-      <configuration name="QuestionnaireTests.hyperlinkTest" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testContactFormValidation - 2021.04.13 at 10h 03m 17s.xml">
+      <configuration name="QuestionnaireTests.testContactFormValidation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuestionnaireTests_hyperlinkTest - 2021.04.12 at 21h 13m 07s.xml">
-      <configuration name="QuestionnaireTests.hyperlinkTest" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testContactFormValidation - 2021.04.13 at 10h 04m 43s.xml">
+      <configuration name="QuestionnaireTests.testContactFormValidation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuestionnaireTests_testFlachDachFlow - 2021.04.12 at 23h 26m 02s.xml">
-      <configuration name="QuestionnaireTests.testFlachDachFlow" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testContactFormValidation - 2021.04.13 at 10h 08m 15s.xml">
+      <configuration name="QuestionnaireTests.testContactFormValidation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuestionnaireTests_testFlachDachFlow - 2021.04.12 at 23h 27m 08s.xml">
-      <configuration name="QuestionnaireTests.testFlachDachFlow" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testContactFormValidation - 2021.04.13 at 10h 19m 34s.xml">
+      <configuration name="QuestionnaireTests.testContactFormValidation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuestionnaireTests_testFlachDachFlow - 2021.04.12 at 23h 29m 07s.xml">
-      <configuration name="QuestionnaireTests.testFlachDachFlow" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testContactFormValidation - 2021.04.13 at 10h 22m 02s.xml">
+      <configuration name="QuestionnaireTests.testContactFormValidation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuestionnaireTests_testFlachDachFlow - 2021.04.12 at 23h 31m 21s.xml">
-      <configuration name="QuestionnaireTests.testFlachDachFlow" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testContactFormValidation - 2021.04.13 at 10h 24m 24s.xml">
+      <configuration name="QuestionnaireTests.testContactFormValidation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuestionnaireTests_testFlachDachFlow - 2021.04.12 at 23h 33m 19s.xml">
-      <configuration name="QuestionnaireTests.testFlachDachFlow" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testContactFormValidation - 2021.04.13 at 10h 28m 40s.xml">
+      <configuration name="QuestionnaireTests.testContactFormValidation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuestionnaireTests_testFlachDachFlow - 2021.04.12 at 23h 34m 13s.xml">
-      <configuration name="QuestionnaireTests.testFlachDachFlow" configurationId="JUnit" />
+    <history-entry file="QuestionnaireTests_testContactFormValidation - 2021.04.13 at 10h 30m 10s.xml">
+      <configuration name="QuestionnaireTests.testContactFormValidation" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49524000" />
+    <option name="totallyTimeSpent" value="56733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4155937" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3197425" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -469,7 +468,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32968536" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3857729" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994528" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -496,13 +495,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectRoofTyoe.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectRoofType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -583,6 +575,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectAgeConfirmation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHouseImagesUpload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectLandRegistrationDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -609,18 +625,6 @@
           <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1210#1211#0" expanded="true" />
-            <element signature="e#1278#1279#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -654,34 +658,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHouseImagesUpload.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="140">
+          <caret line="656" column="15" selection-start-line="656" selection-start-column="15" selection-end-line="656" selection-end-column="15" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectAgeConfirmation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#24535#24536#0" expanded="true" />
+            <element signature="e#24581#24582#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1163">
-          <caret line="228" column="21" selection-start-line="228" selection-start-column="21" selection-end-line="228" selection-end-column="21" />
+        <state relative-caret-position="111">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

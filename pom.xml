@@ -32,7 +32,7 @@
             </executions>
             <configuration>
                 <includes>
-                    <include>SeleniumTests.java</include>
+                    <include>QuestionnaireTests.java</include>
                 </includes>
             </configuration>
         </plugin>
