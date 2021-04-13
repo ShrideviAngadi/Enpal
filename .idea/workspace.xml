@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aaec9377-ac7a-4a42-a6e9-a281cfb7b1e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.enpal.SeleniumTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-de.enpal.SeleniumTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.enpal.SeleniumTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/de.enpal.SeleniumTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/enpal/PageObjectSolarOfferInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/enpal/PageObjectSolarOfferInformation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/enpal/QuestionnaireTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/enpal/QuestionnaireTests.class" afterDir="false" />
-    </list>
+    <list default="true" id="aaec9377-ac7a-4a42-a6e9-a281cfb7b1e9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="509">
+              <caret line="572" column="5" selection-start-line="572" selection-start-column="5" selection-end-line="572" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,9 +164,9 @@
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHousePhotosUpload.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/SeleniumTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectHouseImagesUpload.java" />
-        <option value="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" />
       </list>
     </option>
   </component>
@@ -254,7 +245,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618302960394" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618303084236" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -416,7 +407,7 @@
       <workItem from="1618295098864" duration="1951000" />
       <workItem from="1618297156975" duration="1714000" />
       <workItem from="1618299561817" duration="1789000" />
-      <workItem from="1618301646605" duration="1248000" />
+      <workItem from="1618301646605" duration="1537000" />
     </task>
     <servers />
   </component>
@@ -453,13 +444,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56733000" />
+    <option name="totallyTimeSpent" value="57022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3197425" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3197425" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -468,7 +458,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3857729" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.07113543" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994528" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -669,16 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -689,7 +669,17 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="572" column="5" selection-start-line="572" selection-start-column="5" selection-end-line="572" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
