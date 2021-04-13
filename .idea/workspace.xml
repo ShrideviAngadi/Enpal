@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="aaec9377-ac7a-4a42-a6e9-a281cfb7b1e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-de.enpal.QuestionnaireTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-de.enpal.QuestionnaireTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/de.enpal.QuestionnaireTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/de.enpal.QuestionnaireTests.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/de/enpal/PageObjectSolarOfferInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/enpal/PageObjectSolarOfferInformation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/enpal/QuestionnaireTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/enpal/QuestionnaireTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/enpal/SeleniumTests.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,11 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-116">
+              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -79,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="369">
+              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -252,7 +247,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618306716551" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1618307667432" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -416,14 +411,11 @@
       <workItem from="1618299561817" duration="1789000" />
       <workItem from="1618301646605" duration="1638000" />
       <workItem from="1618304609033" duration="1644000" />
-      <workItem from="1618306433409" duration="282000" />
+      <workItem from="1618306433409" duration="1050000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QuestionnaireTests_testContactFormValidation - 2021.04.13 at 10h 28m 40s.xml">
-      <configuration name="QuestionnaireTests.testContactFormValidation" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="QuestionnaireTests_testContactFormValidation - 2021.04.13 at 10h 30m 10s.xml">
       <configuration name="QuestionnaireTests.testContactFormValidation" configurationId="JUnit" />
     </history-entry>
@@ -451,14 +443,18 @@
     <history-entry file="QuestionnaireTests_testSattelDachFlow - 2021.04.13 at 11h 30m 37s.xml">
       <configuration name="QuestionnaireTests.testSattelDachFlow" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="QuestionnaireTests_testSattelDachFlow - 2021.04.13 at 11h 38m 35s.xml">
+      <configuration name="QuestionnaireTests.testSattelDachFlow" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59049000" />
+    <option name="totallyTimeSpent" value="59817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32832617" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32832617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -467,7 +463,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25444597" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25444597" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994528" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -668,8 +664,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/PageObjectSolarOfferInformation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="369">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -678,11 +674,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/enpal/QuestionnaireTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-116">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
