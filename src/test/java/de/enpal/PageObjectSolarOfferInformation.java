@@ -32,7 +32,13 @@ public class PageObjectSolarOfferInformation {
 
     public void enterHandyNumber(String phoneNumber) {
 
-        driver.findElement(handyNumberTextField).sendKeys(phoneNumber);
+        // This is because of firefox webdriver bug for number input
+        // driver.findElement(handyNumberTextField).sendKeys(phoneNumber); NOT WORKING IN FIREFOX
+
+        for (int i=0; i<phoneNumber.length(); i++) {
+            String singleCharString = Character.toString(phoneNumber.charAt(i));
+            driver.findElement(handyNumberTextField).sendKeys(singleCharString);
+        }
     }
 
     public void enterEmail(String emailId) {

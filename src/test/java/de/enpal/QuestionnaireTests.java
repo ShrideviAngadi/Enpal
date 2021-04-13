@@ -1,5 +1,6 @@
 package de.enpal;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -7,6 +8,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.File;
 
@@ -19,7 +21,8 @@ public class QuestionnaireTests {
 
     @Before
     public void setUp() throws Exception {
-        driver = new ChromeDriver();
+        WebDriverManager.firefoxdriver().setup();
+        driver = new FirefoxDriver();
         driver.manage().window().maximize();
         baseUrl = "https://dynamic-slider-staging.azurewebsites.net/";
 
@@ -70,10 +73,11 @@ public class QuestionnaireTests {
 
         solarOfferInformation.enterFirstAndLastName("Thomas tortal");
         solarOfferInformation.enterStrasse("Gotlinder strasse 26");
+        driver.findElement(solarOfferInformation.handyNumberTextField).click();
         solarOfferInformation.enterHandyNumber("015216778865");
         solarOfferInformation.enterEmail("thomas.tortal@gmail.com");
         solarOfferInformation.clickGetFreeInformationButton();
-        waitSeconds(4);
+        waitSeconds(6);
 
         PageObjectAlmostDone almostDone = new PageObjectAlmostDone(driver);
         checkIfAlmostDoneTextIsVisible(almostDone);
