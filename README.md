@@ -16,3 +16,4 @@ mvn clean test
 ```
 
 The result looks as following:
+![](EnpalGif)
