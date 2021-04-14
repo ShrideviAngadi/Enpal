@@ -1,6 +1,5 @@
 package de.enpal;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -21,7 +20,6 @@ public class QuestionnaireTests {
 
     @Before
     public void setUp() throws Exception {
-        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         baseUrl = "https://dynamic-slider-staging.azurewebsites.net/";

@@ -1,0 +1,14 @@
+de/enpal/PageObjectHouseImagesUpload.class
+de/enpal/PageObjectHouseOwner.class
+de/enpal/PageObjectElectricityUsage.class
+de/enpal/PageObjectLandRegistrationDetails.class
+de/enpal/PageObjectAgeConfirmation.class
+de/enpal/PageObjectPostalCode.class
+de/enpal/PageObjectSkyLight.class
+de/enpal/PageObjectHouseFeatures.class
+de/enpal/PageObjectHousePhotosUpload.class
+de/enpal/PageObjectRoofType.class
+de/enpal/QuestionnaireTests.class
+de/enpal/PageObjectSolarOfferInformation.class
+de/enpal/PageObjectAlmostDone.class
+de/enpal/PageObjectNumberOfPeople.class
